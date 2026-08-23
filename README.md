@@ -1,3 +1,5 @@
+https://rehsanva.github.io/Feira_Tecnologica_2026/
+
 *Alimenta+*
 
 O Alimenta+ é um projeto acadêmico inspirado na ODS 2 — Fome Zero e Agricultura Sustentável.
