@@ -1,13 +1,9 @@
-/* =========================================================
-   ALIMENTA+ — ESTILO GERAL
-   ========================================================= */
+/*ALIMENTA+ — ESTILO GERAL*/
 
    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
 
 
-   /* =========================================================
-      VARIÁVEIS
-      ========================================================= */
+   /*VARIÁVEIS*/
    
    :root {
        --verde: #27823a;
@@ -31,9 +27,7 @@
    }
    
    
-   /* =========================================================
-      RESET
-      ========================================================= */
+   /*RESET*/
    
    * {
        margin: 0;
@@ -75,9 +69,7 @@
    }
    
    
-   /* =========================================================
-      CONTAINER
-      ========================================================= */
+   /*CONTAINER*/
    
    header nav,
    .inicio,
@@ -93,9 +85,7 @@
    }
    
    
-   /* =========================================================
-      CABEÇALHO
-      ========================================================= */
+   /*CABEÇALHO*/
    
    header {
        position: sticky;
@@ -124,7 +114,7 @@
        align-items: center;
        gap: 8px;
    
-       color: var(--verde);
+       color: #6db97f;
    }
    
    .logo strong {
@@ -158,19 +148,22 @@
    header nav ul a {
        font-size: 0.9rem;
        font-weight: 500;
-       color: #536158;
+       color: #6db97f;
    
        transition: 0.2s ease;
    }
    
    header nav ul a:hover {
-       color: var(--verde);
+       color: #dbffe3;
+   }
+
+
+   header{
+    background-color: #222c17;
    }
    
    
-   /* =========================================================
-      TÍTULOS
-      ========================================================= */
+   /*TÍTULOS*/
    
    .titulo-secao {
        text-align: center;
@@ -227,15 +220,13 @@
        position: absolute;
        left: 0;
        right: 0;
-   
        height: 560px;
-   
        background:
            linear-gradient(
                100deg,
-               #effaf3 0%,
-               #eaf8f5 55%,
-               #e3f3fa 100%
+               #dbffd1 0%,
+               rgb(220, 255, 192) 55%,
+               #c9ffbe 100%
            );
    
        z-index: -1;
@@ -256,8 +247,8 @@
    
        border-radius: 30px;
    
-       color: var(--verde);
-       background: #dff2e4;
+       color: #6db97f;
+       background: #02300d;
    
        font-size: 0.78rem;
        font-weight: 700;
@@ -333,20 +324,15 @@
    
    .inicio-imagem {
        height: 360px;
-   
        border-radius: 24px;
-   
        overflow: hidden;
-   
        background:
            linear-gradient(
                135deg,
                #cdeed9,
                #dff2f8
            );
-   
        box-shadow: var(--sombra);
-   
        display: flex;
        align-items: center;
        justify-content: center;
@@ -879,7 +865,8 @@
        margin-bottom: 20px;
    
        border-radius: 18px;
-       background: #f7f9f7;
+       border: 0.5px dashed #14772b;
+       background: #e1ffe1;
    }
    
    section:nth-of-type(7) img {
@@ -1014,16 +1001,11 @@
    .campo input,
    .campo textarea {
        width: 100%;
-   
        padding: 13px 14px;
-   
        border: 1px solid var(--borda);
        border-radius: 10px;
-   
        background: #fbfcfb;
-   
        outline: none;
-   
        resize: vertical;
    }
    
@@ -1068,23 +1050,19 @@
    }
    
    .accordion {
-       width: 100%;
-   
+       width: 95%;
        display: flex;
        justify-content: space-between;
-   
        padding: 18px 20px;
-   
        border: 1px solid var(--borda);
        border-radius: 10px;
-   
        background: white;
-   
        font-size: 0.95rem;
        font-weight: 700;
        text-align: left;
-   
        margin-top: 10px;
+       margin-left: 50px;
+       margin-right: 50px;
    }
    
    .accordion::after {
@@ -1116,8 +1094,10 @@
    
        font-size: 0.9rem;
    }
-   
-   
+
+   .divduv h2{
+    margin-left: 50px;
+   }
    /* =========================================================
       FOOTER
       ========================================================= */
