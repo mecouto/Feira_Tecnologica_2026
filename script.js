@@ -9,3 +9,5 @@ L.marker([-23.5505, -46.6333])
     .bindPopup("Ponto de distribuição de alimentos");
     // O L vem do Leaflet.
     // praticamente é Crie um marcador nessa coordenada e coloque-o no meu mapa.
+
+    
