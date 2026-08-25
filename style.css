@@ -247,8 +247,8 @@
    
        border-radius: 30px;
    
-       color: var(--verde);
-       background: #dff2e4;
+       color: #6db97f;
+       background: #02300d;
    
        font-size: 0.78rem;
        font-weight: 700;
@@ -865,7 +865,8 @@
        margin-bottom: 20px;
    
        border-radius: 18px;
-       background: #f7f9f7;
+       border: 0.5px dashed #14772b;
+       background: #e1ffe1;
    }
    
    section:nth-of-type(7) img {
@@ -1000,16 +1001,11 @@
    .campo input,
    .campo textarea {
        width: 100%;
-   
        padding: 13px 14px;
-   
        border: 1px solid var(--borda);
        border-radius: 10px;
-   
        background: #fbfcfb;
-   
        outline: none;
-   
        resize: vertical;
    }
    
@@ -1054,23 +1050,19 @@
    }
    
    .accordion {
-       width: 100%;
-   
+       width: 95%;
        display: flex;
        justify-content: space-between;
-   
        padding: 18px 20px;
-   
        border: 1px solid var(--borda);
        border-radius: 10px;
-   
        background: white;
-   
        font-size: 0.95rem;
        font-weight: 700;
        text-align: left;
-   
        margin-top: 10px;
+       margin-left: 50px;
+       margin-right: 50px;
    }
    
    .accordion::after {
@@ -1102,8 +1094,10 @@
    
        font-size: 0.9rem;
    }
-   
-   
+
+   .divduv h2{
+    margin-left: 50px;
+   }
    /* =========================================================
       FOOTER
       ========================================================= */
