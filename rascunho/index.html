@@ -1,383 +1,373 @@
-<!doctype html>
-<html lang="pt-BR">
- <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260811-05-f555caa","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/7949ff62d67710d5.telemetry_sdk.js" integrity="sha512-KIvXA82Di44YY/RH9/63A9MuTuavYgDFG8PfErJn7Wli4K0LAOk+coo/aPXk3+ZNL96nHh9VYD4PE+fLes+laQ=="></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alimenta+ | Mapa da Solidariedade</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        verde: '#2E7D32',
-                        laranja: '#FB8C00',
-                        azulclaro: '#E3F2FD'
-                    }
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimenta+</title>
+    <link rel="icon" type="imagem" href="img/Design sem nome (24).png">
+    <meta name="description"
+        content="Alimenta+ é uma plataforma que ajuda pessoas a encontrarem pontos gratuitos de distribuição de alimentos.">
+    <meta name="author" content="Julia Rudel, João Gabini, Maria Couto, Rebeca Santos, Victoria Americo">
+    <link rel="stylesheet" href="stilo.css">
+    
+</head>
+
+<body> 
+    <!-- ========================= CABEÇALHO / NAVEGAÇÃO ========================== -->
+    <header>
+        <nav>
+            <div class="logo"> <a href="#inicio"> <strong>Alimenta+</strong> <span>2026</span> </a> </div>
+            <ul>
+                <li> <a href="#inicio">Início</a> </li>
+                <li> <a href="#como-funciona">Como funciona</a> </li>
+                <li> <a href="#nasceu">Nossa História</a> </li>
+                <li> <a href="#mapa">Mapa</a> </li>
+                <li> <a href="#desenvolvedores">Quem Somos</a> </li>
+                <li> <a href="#ods-2">ODS 2</a> </li>
+                <li> <a href="#ajudar">Ajudar</a> </li>
+                <li> <a href="#contato">Contato</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <!-- ========================= INÍCIO ========================== -->
+        <section class="inicio" id="inicio">
+            <div class="inicio-conteudo"> <span class="etiqueta"> ODS 2 • Fome Zero </span>
+                <h1> Ninguém deve <span>passar fome!</span> </h1>
+                <p> Encontre gratuitamente pontos de distribuição de alimentos próximos de você. </p>
+                <p> O Alimenta+ conecta pessoas que precisam de alimentos a iniciativas que já fazem a diferença na
+                    comunidade. </p>
+
+                <button class="botao-inicio" onclick="location.href='#mapa'">Encontrar pontos</button>
+                <button class="botao-secundario" onclick="location.href='#ajudar'">Seja um voluntário</button>
+            </div>
+
+            <div class="inicio-imagem"> imagem<img src=""
+                    alt="Ilustração representando solidariedade e distribuição de alimentos"> </div>
+        </section> 
+
+        <!-- ========================= COMO FUNCIONA ========================== -->
+        <section id="como-funciona" class="como-funciona">
+            <div class="titulo-secao">
+                <h2> Encontrar ajuda pode ser simples. </h2>
+                <p> O Alimenta+ organiza informações sobre pontos de distribuição de alimentos em um único lugar. </p>
+            </div>
+            <div class="cards-funcionamento">
+                <article class="card">
+                    <div class="card-numero"> 01 </div>
+                    <div class="card-icone"> 📍 </div>
+                    <h3> Encontre </h3>
+                    <p> Acesse o mapa e encontre pontos de distribuição de alimentos próximos de você. </p>
+                </article>
+                <article class="card">
+                    <div class="card-numero"> 02 </div>
+                    <div class="card-icone"> 🍲 </div>
+                    <h3> Confira </h3>
+                    <p> Veja quais alimentos estão disponíveis, os horários de atendimento e as condições para retirada.
+                    </p>
+                </article>
+                <article class="card">
+                    <div class="card-numero"> 03 </div>
+                    <div class="card-icone"> 🤝 </div>
+                    <h3> Receba </h3>
+                    <p> Vá até o ponto escolhido e tenha acesso ao alimento disponibilizado pela iniciativa. </p>
+                </article>
+            </div>
+        </section> 
+
+        <!-- ========================= COMO O PROJETO NASCEU ========================== -->
+        <section id="nasceu" class="projeto-nasceu">
+            <div class="titulo-secao">
+                <span>NOSSA INSPIRAÇÃO</span>
+                <h2> Como o Alimenta+ nasceu? </h2>
+                <p> A história por trás da iniciativa que conecta solidariedade e tecnologia. </p>
+            </div>
+            <div class="conteudo-nasceu">
+                <div class="texto-nasceu">
+                    <p>Todo grande projeto surge da vontade de transformar uma realidade incômoda. A semente do <strong>Alimenta+</strong> foi plantada ao percebermos o abismo existente entre iniciativas de distribuição de alimentos e as pessoas que realmente precisam dessa ajuda no dia a dia.</p>
+                    <p>Percebemos que muitas informações sobre cozinhas solidárias, ONGs e pontos de doação ficavam dispersas ou eram difíceis de acessar de forma rápida. Pensando nisso, unimos tecnologia, design e empatia para estruturar uma plataforma centralizada, intuitiva e totalmente gratuita.</p>
+                    <p>Cada linha de código e cada detalhe do mapa foram pensados para reduzir barreiras e garantir que a informação funcione como um verdadeiro alimento para quem busca amparo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= MAPA ========================== -->
+        <section id="mapa" class="mapa">
+            <div class="titulo-secao"> <span>MAPA DA SOLIDARIEDADE</span>
+                <h2> Encontre um ponto perto de você. </h2>
+                <p> Consulte os pontos de distribuição cadastrados e encontre a opção mais adequada. </p>
+            </div>
+            <div class="mapa-area"> 
+                <div id="mapa-interativo">
+                    <p> Mapa será carregado aqui. </p>
+                </div>
+                <aside class="filtros">
+                    <h3> Encontrar alimentos </h3> 
+                    <label for="pesquisa"> Pesquisar </label> 
+                    <input type="text" id="pesquisa" name="pesquisa" placeholder="Digite bairro ou endereço"> 
+                    <label for="tipo-alimento"> Tipo de alimento </label> 
+                    <select id="tipo-alimento" name="tipo-alimento">
+                        <option value=""> Todos os alimentos </option>
+                        <option value="marmita"> Marmitas </option>
+                        <option value="cesta"> Cestas básicas </option>
+                        <option value="frutas"> Frutas e verduras </option>
+                        <option value="paes"> Pães </option>
+                    </select> 
+                    <label for="disponibilidade"> Disponibilidade </label> 
+                    <select id="disponibilidade" name="disponibilidade">
+                        <option value=""> Todas </option>
+                        <option value="disponivel"> Disponível </option>
+                        <option value="pouco"> Pouca disponibilidade </option>
+                        <option value="esgotado"> Esgotado </option>
+                    </select> 
+                    <button type="button"> Buscar pontos </button>
+                </aside>
+            </div> 
+
+            <div class="lista-pontos">
+                <article class="ponto">
+                    <div class="ponto-status disponivel"> ● Disponível </div>
+                    <h3> Cozinha Solidária </h3>
+                    <p> 📍 Centro </p>
+                    <p> Marmitas </p>
+                    <p> 11h às 14h </p> <a href="#"> Ver detalhes </a>
+                </article>
+                <article class="ponto">
+                    <div class="ponto-status disponivel"> ● Disponível </div>
+                    <h3> Projeto Mesa Cheia </h3>
+                    <p> 📍 Vila Mariana </p>
+                    <p> Cestas básicas </p>
+                    <p> 09h às 16h </p> <a href="#"> Ver detalhes </a>
+                </article>
+                <article class="ponto">
+                    <div class="ponto-status pouco"> ● Pouca disponibilidade </div>
+                    <h3> Ponto Comunitário </h3>
+                    <p> 📍 Lapa </p>
+                    <p> Frutas e verduras </p>
+                    <p> 10h às 15h </p> <a href="#"> Ver detalhes </a>
+                </article>
+            </div>
+        </section> 
+
+        <!-- ========================= DESENVOLVEDORES ========================== -->
+        <section id="desenvolvedores" class="desenvolvedores-secao">
+            <div class="titulo-secao">
+                <span>QUEM FAZ ACONTECER</span>
+                <h2> Conheça os desenvolvedores </h2>
+                <p> A equipe por trás da criação e estruturação do Alimenta+. </p>
+            </div>
+            <div class="grid-devs">
+                <div class="card-dev">
+                    <div class="avatar-dev">🌱</div>
+                    <h3>Julia Rudel</h3>
+                    <span class="cargo-dev">Desenvolvedora</span>
+                    <p>Comprometida com o impacto social e o desenvolvimento de soluções voltadas para a comunidade.</p>
+                </div>
+                <div class="card-dev">
+                    <div class="avatar-dev">💻</div>
+                    <h3>João Gabini</h3>
+                    <span class="cargo-dev">Desenvolvedor</span>
+                    <p>Focado na implementação lógica e estruturação técnica da plataforma.</p>
+                </div>
+                <div class="card-dev">
+                    <div class="avatar-dev">✨</div>
+                    <h3>Maria Couto</h3>
+                    <span class="cargo-dev">Desenvolvedora</span>
+                    <p>Dedicada a garantir fluidez, usabilidade e uma experiência amigável aos usuários.</p>
+                </div>
+                <div class="card-dev">
+                    <div class="avatar-dev">🤝</div>
+                    <h3>Rebeca Santos</h3>
+                    <span class="cargo-dev">Desenvolvedora</span>
+                    <p>Apoio na organização de conteúdos e funcionalidades voltadas à acessibilidade.</p>
+                </div>
+                <div class="card-dev">
+                    <div class="avatar-dev">🚀</div>
+                    <h3>Victoria Américo</h3>
+                    <span class="cargo-dev">Desenvolvedora & UI</span>
+                    <p>Apaixonada por design limpo, identidade visual e experiências digitais intuitivas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= ODS 2 ========================== -->
+        <section id="ods-2" class="ods">
+            <div class="ods-conteudo">
+                <h2> ODS 2 — Fome Zero</h2>
+                <p> A ODS 2 tiene como objetivo acabar com a fome, alcançar a segurança alimentar, melhorar a nutrição e promover a agricultura sustentável. </p>
+                <p> O Alimenta+ busca contribuir com esse objetivo facilitando o acesso à informação sobre iniciativas que já distribuem alimentos gratuitamente. </p>
+                <p> A proposta não é substituir organizações, governos ou projetos sociais. É criar uma ponte entre essas iniciativas e as pessoas que precisam encontrá-las. </p>
+            </div>
+            <div class="ods-destaque">
+                <div> <strong> ODS </strong> <span> 02 </span> </div>
+                <p> Fome Zero</p>
+            </div>
+        </section> 
+
+        <!-- ========================= IMPACTO ========================== -->
+        <section class="impacto">
+            <div class="titulo-secao"> <span></span>
+                <h2>NOSSO IMPACTO </h2>
+                <p> Informação também pode alimentar. Quando uma pessoa sabe onde buscar ajuda, uma barreira de acesso é reduzida. </p>
+            </div>
+            <div class="numeros-impacto">
+                <div class="numero"> + de <strong> 350 </strong> <span> pontos cadastrados </span> </div>
+                <div class="numero"> + de <strong> 800 </strong> <span> familias atendidas </span> </div>
+                <div class="numero"> + de  <strong> 22 </strong> <span> regiões atendidas </span> </div>
+                <div class="numero"> Apenas <strong> 01 </strong> <span> objetivo: combater a fome </span> </div>
+            </div>
+        </section> 
+
+        <!-- ========================= AJUDAR ========================== -->
+        <section id="ajudar" class="ajudar">
+            <div class="titulo-secao"> <span>FAÇA PARTE</span>
+                <h2> Você também pode ajudar. </h2>
+                <p> Existem várias maneiras de fortalecer uma rede de combate à insegurança alimentar. </p>
+            </div>
+            <div class="cards-ajuda">
+                <article class="card-ajuda">
+                    <div> 📍 </div>
+                    <h3> Cadastre um ponto </h3>
+                    <p> Conhece uma instituição ou iniciativa que distribui alimentos? Ajude outras pessoas a encontrá-la. </p>
+                    <a href="cadastro.html" target="_blank" rel="noopener noreferrer"> Cadastrar ponto </a>
+                </article>
+
+                <article class="card-ajuda">
+                    <div> 📢 </div>
+                    <h3> Divulgue </h3>
+                    <p> Compartilhe o Alimenta+ com pessoas, organizações e projetos da sua comunidade. </p>
+                    <button onclick="compartilharProjeto()" class="btn-compartilhar">
+                        <span>🔗</span>
+                        Compartilhe este projeto
+                    </button>
+                </article>
+
+                <article class="card-ajuda">
+                    <div> 🤝 </div>
+                    <h3> Seja voluntário em outros projetos</h3>
+                    <p> Apoie iniciativas que trabalham diariamente para reduzir a fome. </p>
+                    <a href="https://goodtruck.org.br/" target="_blank" rel="noopener noreferrer">Conhecer projeto parceiro</a>
+                </article>
+
+                <div id="mensagemCompartilhamento" class="toast-compartilhamento">
+                    <span class="toast-icone">✓</span>
+                    <div>
+                        <strong>Link copiado!</strong>
+                        <p>Agora você pode compartilhar este projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= DEPOIMENTOS ========================== -->
+        <section class="depoimentos-secao">
+            <div>
+                <div><img src='' alt=''></div>
+                <div>
+                    <p>“O Alimenta+ me ajudou a encontrar um ponto de distribuição de alimentos perto da minha casa. Agora posso levar minha família para receber refeições sem precisar me preocupar com o custo.”</p>
+                    <p>— Maria, beneficiária do projeto.</p>
+                </div>
+            </div>
+            <div>
+                <div><img src='' alt=''></div>
+                <div>
+                    <p>“Essa plataforma facilitou muito nosso trabalho como ONG. Agora mais pessoas nos encontram."</p>
+                    <p>— Carlos R., ONG Ação Solidária</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= CONTATO ========================== -->
+        <section id="contato" class="contato">
+            <div class="titulo-secao"> <span>CONTATO</span>
+                <h2> Quer falar com a equipe? </h2>
+                <p> Envie uma mensagem, sugestão ou informação sobre um ponto cadastrado. </p>
+            </div>
+            <form>
+                <div class="campo"> <label for="nome-contato"> Nome </label> <input type="text" id="nome-contato" name="nome-contato" placeholder="Seu nome"> </div>
+                <div class="campo"> <label for="email"> E-mail </label> <input type="email" id="email" name="email" placeholder="seuemail@email.com"> </div>
+                <div class="campo campo-completo"> <label for="mensagem"> Mensagem </label> <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea> </div>
+                <div class="campo campo-completo"> <button type="submit"> Enviar mensagem </button> </div>
+            </form>
+        </section>
+
+        <!-- ========================= FAQ ========================== -->
+        <section class="faq-secao">
+            <div class="divduv">
+                <h2> Dúvidas Frequentes </h2>
+
+                <button class="accordion"><span>É Gratuito?</span></button>
+                <div class="panel">
+                    <p>Sim, totalmente gratuito para quem busca alimentação e para quem deseja cadastrar pontos.</p>
+                </div>
+
+                <button class="accordion"><span>Quem pode utilizar a plataforma?</span></button>
+                <div class="panel">
+                    <p>Qualquer pessoa pode consultar a plataforma. Os critérios para retirada dos alimentos podem variar de acordo com cada ponto de distribuição.</p>
+                </div>
+
+                <button class="accordion"><span>Como encontro um local proximo?</span></button>
+                <div class="panel">
+                    <p>Use o mapa interativo e digite seu bairro ou CEP na barra de pesquisa.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-final">
+            <p> © 2026 Alimenta+ · Todos os direitos reservados. </p>
+            <p> João Gabini · Julia Rudel · Maria Couto · Rebeca Santos · Victoria Américo </p>
+        </div>
+    </footer>
+
+    <script>
+        const accordions = document.querySelectorAll(".accordion");
+        accordions.forEach(acc => {
+            acc.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
                 }
-            }
-        }
-    </script>
-  <style>
-        body { font-family: 'DM Sans', sans-serif; }
-        .font-size-large { font-size: 1.2em !important; }
-        .font-size-xlarge { font-size: 1.4em !important; }
-        .high-contrast { filter: contrast(1.4); }
-        @keyframes countUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-in { animation: countUp 0.6s ease forwards; }
-        .marker-popup { min-width: 250px; }
-        #map { z-index: 1; }
-        .leaflet-container { border-radius: 1rem; }
-        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-        .faq-answer.open { max-height: 200px; }
-        .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
-        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
-    </style>
-  <script src="/_sdk/04cc6185e046f597.resizing_sdk.js" type="text/javascript" integrity="sha512-CiE/G92aQF0nxneFg1kdOvXih8sQ1Z2a2QI3+r/WvzJwQqH6+IyB3iL07OkJmpm3ABAaf07+FnqWny98f5sR6w=="></script>
- <script src="/_sdk/0e8d3a91e1c6f495.data_sdk.js" integrity="sha512-c00oDoGjsMgluCLLEyVl3suwEkgjOGGplVFbsilUoBg4aMKNmsL3mwsc9r0dPn95qiSZyjBousQXgROkAW7p/w=="></script></head>
- <body data-template-id="__page-root" class="w-full min-h-screen bg-white dark:bg-gray-900 dark:text-white transition-colors"><!-- Accessibility Toolbar -->
-  <div id="a11y-toolbar" class="fixed top-4 right-4 z-50 flex flex-col gap-2"><button onclick="toggleDark()" class="bg-white dark:bg-gray-800 shadow-lg rounded-full p-3 hover:scale-110 transition" aria-label="Modo escuro"> <i data-lucide="moon" class="w-5 h-5"></i> </button> <button onclick="changeFontSize()" class="bg-white dark:bg-gray-800 shadow-lg rounded-full p-3 hover:scale-110 transition" aria-label="Tamanho da fonte"> <i data-lucide="type" class="w-5 h-5"></i> </button> <button onclick="toggleContrast()" class="bg-white dark:bg-gray-800 shadow-lg rounded-full p-3 hover:scale-110 transition" aria-label="Alto contraste"> <i data-lucide="contrast" class="w-5 h-5"></i> </button>
-  </div><!-- Header -->
-  <header class="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-40">
-   <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-2"><span class="text-2xl">🍽️</span>
-     <h1 data-template-id="site-logo" class="canva-text text-xl font-bold text-verde"></h1>
-    </div>
-    <div class="hidden md:flex gap-6 text-sm font-medium"><a href="#home" class="hover:text-verde transition">Início</a> <a href="#mapa" class="hover:text-verde transition">Mapa</a> <a href="#ods" class="hover:text-verde transition">ODS 2</a> <a href="#ajudar" class="hover:text-verde transition">Ajudar</a> <a href="#contato" class="hover:text-verde transition">Contato</a>
-    </div><button id="mobile-menu-btn" class="md:hidden" aria-label="Menu"> <i data-lucide="menu" class="w-6 h-6"></i> </button>
-   </nav>
-  </header>
-  <main><!-- Hero -->
-   <section id="home" class="relative overflow-hidden">
-    <div data-template-id="hero-bg" class="canva-section bg-gradient-to-br from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
-     <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
-      <div>
-       <h2 data-template-id="hero-title" class="canva-text text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight"></h2>
-       <p data-template-id="hero-subtitle" class="canva-text mt-4 text-lg text-gray-600 dark:text-gray-300"></p>
-       <div class="mt-8 flex flex-wrap gap-4"><a href="#mapa" data-template-id="hero-cta-primary" class="canva-button px-6 py-3 bg-verde text-white rounded-full font-semibold hover:bg-green-800 transition shadow-lg"></a> <a href="#ajudar" data-template-id="hero-cta-secondary" class="canva-button px-6 py-3 bg-white text-verde border-2 border-verde rounded-full font-semibold hover:bg-green-50 transition"></a>
-       </div>
-      </div>
-      <div class="flex justify-center"><img data-template-id="hero-image" class="canva-image rounded-2xl shadow-2xl w-full max-w-md object-cover" loading="lazy">
-      </div>
-     </div>
-    </div>
-   </section><!-- Como Funciona -->
-   <section class="py-16 bg-white dark:bg-gray-900">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-     <h2 data-template-id="como-funciona-title" class="canva-text text-3xl font-bold text-gray-900 dark:text-white"></h2>
-     <div class="mt-12 grid md:grid-cols-3 gap-8">
-      <div data-template-id="step-1-card" class="canva-card card-hover p-8 rounded-2xl bg-azulclaro dark:bg-gray-800 text-center">
-       <div class="text-4xl mb-4">
-        📍
-       </div>
-       <h3 data-template-id="step-1-title" class="canva-text font-bold text-lg"></h3>
-       <p data-template-id="step-1-desc" class="canva-text mt-2 text-gray-600 dark:text-gray-300"></p>
-      </div>
-      <div data-template-id="step-2-card" class="canva-card card-hover p-8 rounded-2xl bg-azulclaro dark:bg-gray-800 text-center">
-       <div class="text-4xl mb-4">
-        🍽️
-       </div>
-       <h3 data-template-id="step-2-title" class="canva-text font-bold text-lg"></h3>
-       <p data-template-id="step-2-desc" class="canva-text mt-2 text-gray-600 dark:text-gray-300"></p>
-      </div>
-      <div data-template-id="step-3-card" class="canva-card card-hover p-8 rounded-2xl bg-azulclaro dark:bg-gray-800 text-center">
-       <div class="text-4xl mb-4">
-        ❤️
-       </div>
-       <h3 data-template-id="step-3-title" class="canva-text font-bold text-lg"></h3>
-       <p data-template-id="step-3-desc" class="canva-text mt-2 text-gray-600 dark:text-gray-300"></p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Mapa -->
-   <section id="mapa" class="py-16 bg-gray-50 dark:bg-gray-800">
-    <div class="max-w-7xl mx-auto px-4">
-     <h2 data-template-id="mapa-title" class="canva-text text-3xl font-bold text-center text-gray-900 dark:text-white mb-8"></h2><!-- Filters -->
-     <div class="flex flex-wrap gap-3 mb-4 justify-center"><input type="text" placeholder="Digite seu bairro ou CEP" class="px-4 py-2 rounded-full border border-gray-300 dark:border-gray-600 dark:bg-gray-700 w-64 text-sm" id="search-input"> <label class="flex items-center gap-1 text-sm bg-white dark:bg-gray-700 px-3 py-2 rounded-full shadow-sm cursor-pointer"><input type="checkbox" checked class="accent-verde filter-cb" data-type="refeicao"> 🍽 Refeição</label> <label class="flex items-center gap-1 text-sm bg-white dark:bg-gray-700 px-3 py-2 rounded-full shadow-sm cursor-pointer"><input type="checkbox" checked class="accent-verde filter-cb" data-type="cesta"> 🛒 Cesta básica</label> <label class="flex items-center gap-1 text-sm bg-white dark:bg-gray-700 px-3 py-2 rounded-full shadow-sm cursor-pointer"><input type="checkbox" checked class="accent-verde filter-cb" data-type="banco"> 🥬 Banco de alimentos</label> <label class="flex items-center gap-1 text-sm bg-white dark:bg-gray-700 px-3 py-2 rounded-full shadow-sm cursor-pointer"><input type="checkbox" checked class="accent-verde filter-cb" data-type="ong"> 🧑‍🤝‍🧑 ONG</label>
-     </div>
-     <div id="map" class="w-full h-[500px] rounded-2xl shadow-lg"></div><!-- Detail card -->
-     <div id="map-detail" class="hidden mt-4 bg-white dark:bg-gray-700 rounded-2xl p-6 shadow-lg max-w-lg mx-auto">
-      <h3 id="detail-name" class="font-bold text-xl text-verde"></h3>
-      <p id="detail-address" class="text-gray-600 dark:text-gray-300 mt-1"></p>
-      <p id="detail-hours" class="text-sm text-gray-500 dark:text-gray-400 mt-1"></p>
-      <p id="detail-phone" class="text-sm mt-1"></p>
-      <p id="detail-type" class="mt-2 text-sm font-medium text-laranja"></p>
-      <div class="mt-4 flex flex-wrap gap-3"><button class="px-4 py-2 bg-verde text-white rounded-full text-sm font-medium hover:bg-green-800 transition">Como chegar</button> <button class="px-4 py-2 bg-laranja text-white rounded-full text-sm font-medium hover:bg-orange-700 transition">Ligar</button> <button class="px-4 py-2 bg-gray-200 dark:bg-gray-600 rounded-full text-sm font-medium hover:bg-gray-300 transition">Compartilhar</button>
-      </div>
-     </div>
-    </div>
-   </section><!-- ODS 2 -->
-   <section id="ods" class="py-16 bg-white dark:bg-gray-900">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-     <div>
-      <h2 data-template-id="ods-title" class="canva-text text-3xl font-bold text-verde"></h2>
-      <p data-template-id="ods-text" class="canva-text mt-4 text-gray-600 dark:text-gray-300 leading-relaxed"></p>
-     </div>
-     <div class="flex justify-center"><img data-template-id="ods-image" class="canva-image rounded-2xl shadow-lg w-full max-w-sm object-cover" loading="lazy">
-     </div>
-    </div>
-   </section><!-- Estatísticas -->
-   <section class="py-16 bg-verde text-white">
-    <div class="max-w-6xl mx-auto px-4">
-     <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      <div class="stat-item" data-target="520">
-       <p class="text-4xl font-bold stat-number">0</p>
-       <p data-template-id="stat-1-label" class="canva-text mt-2 text-green-100"></p>
-      </div>
-      <div class="stat-item" data-target="35000">
-       <p class="text-4xl font-bold stat-number">0</p>
-       <p data-template-id="stat-2-label" class="canva-text mt-2 text-green-100"></p>
-      </div>
-      <div class="stat-item" data-target="8000">
-       <p class="text-4xl font-bold stat-number">0</p>
-       <p data-template-id="stat-3-label" class="canva-text mt-2 text-green-100"></p>
-      </div>
-      <div class="stat-item" data-target="120">
-       <p class="text-4xl font-bold stat-number">0</p>
-       <p data-template-id="stat-4-label" class="canva-text mt-2 text-green-100"></p>
-      </div>
-     </div>
-    </div>
-   </section><!-- Quero Ajudar -->
-   <section id="ajudar" class="py-16 bg-gray-50 dark:bg-gray-800">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-     <h2 data-template-id="ajudar-title" class="canva-text text-3xl font-bold text-gray-900 dark:text-white"></h2>
-     <p data-template-id="ajudar-subtitle" class="canva-text mt-2 text-gray-600 dark:text-gray-300"></p>
-     <div class="mt-8 flex justify-center"><img data-template-id="volunteer-image" class="canva-image rounded-2xl shadow-lg w-full max-w-2xl object-cover h-64" loading="lazy">
-     </div>
-     <div class="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-4"><button data-template-id="btn-doar" class="canva-button card-hover px-6 py-4 bg-verde text-white rounded-2xl font-semibold shadow-md"></button> <button data-template-id="btn-voluntario" class="canva-button card-hover px-6 py-4 bg-laranja text-white rounded-2xl font-semibold shadow-md"></button> <button data-template-id="btn-cadastrar-ong" class="canva-button card-hover px-6 py-4 bg-blue-600 text-white rounded-2xl font-semibold shadow-md"></button> <button data-template-id="btn-cadastrar-ponto" class="canva-button card-hover px-6 py-4 bg-purple-600 text-white rounded-2xl font-semibold shadow-md"></button>
-     </div>
-    </div>
-   </section><!-- Depoimentos -->
-   <section class="py-16 bg-white dark:bg-gray-900">
-    <div class="max-w-5xl mx-auto px-4">
-     <h2 data-template-id="depoimentos-title" class="canva-text text-3xl font-bold text-center text-gray-900 dark:text-white mb-10"></h2>
-     <div class="grid md:grid-cols-2 gap-8">
-      <div data-template-id="testimonial-1-card" class="canva-card card-hover bg-azulclaro dark:bg-gray-800 p-6 rounded-2xl flex gap-4 items-start"><img data-template-id="testimonial-1-photo" class="canva-image w-14 h-14 rounded-full object-cover flex-shrink-0" loading="lazy">
-       <div>
-        <p data-template-id="testimonial-1-text" class="canva-text text-gray-700 dark:text-gray-200 italic"></p>
-        <p data-template-id="testimonial-1-name" class="canva-text mt-2 font-semibold text-verde text-sm"></p>
-       </div>
-      </div>
-      <div data-template-id="testimonial-2-card" class="canva-card card-hover bg-azulclaro dark:bg-gray-800 p-6 rounded-2xl flex gap-4 items-start"><img data-template-id="testimonial-2-photo" class="canva-image w-14 h-14 rounded-full object-cover flex-shrink-0" loading="lazy">
-       <div>
-        <p data-template-id="testimonial-2-text" class="canva-text text-gray-700 dark:text-gray-200 italic"></p>
-        <p data-template-id="testimonial-2-name" class="canva-text mt-2 font-semibold text-verde text-sm"></p>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section><!-- Contato -->
-   <section id="contato" class="py-16 bg-gray-50 dark:bg-gray-800">
-    <div class="max-w-xl mx-auto px-4">
-     <h2 data-template-id="contato-title" class="canva-text text-3xl font-bold text-center text-gray-900 dark:text-white mb-8"></h2>
-     <form id="contact-form" class="space-y-4">
-      <div><label for="f-name" data-template-id="label-name" class="canva-text block text-sm font-medium mb-1"></label> <input id="f-name" type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-verde outline-none">
-      </div>
-      <div><label for="f-email" data-template-id="label-email" class="canva-text block text-sm font-medium mb-1"></label> <input id="f-email" type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-verde outline-none">
-      </div>
-      <div><label for="f-city" data-template-id="label-city" class="canva-text block text-sm font-medium mb-1"></label> <input id="f-city" type="text" class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-verde outline-none">
-      </div>
-      <div><label for="f-msg" data-template-id="label-message" class="canva-text block text-sm font-medium mb-1"></label> <textarea id="f-msg" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:ring-2 focus:ring-verde outline-none"></textarea>
-      </div><button type="submit" data-template-id="form-submit-btn" class="canva-button w-full py-3 bg-verde text-white rounded-xl font-semibold hover:bg-green-800 transition"></button>
-     </form>
-     <p id="form-success" class="hidden mt-4 text-center text-verde font-medium">✅ Mensagem enviada com sucesso!</p>
-     <p id="form-error" class="hidden mt-4 text-center text-red-600 font-medium">Erro ao enviar. Tente novamente.</p>
-    </div>
-   </section><!-- FAQ -->
-   <section class="py-16 bg-white dark:bg-gray-900">
-    <div class="max-w-3xl mx-auto px-4">
-     <h2 data-template-id="faq-title" class="canva-text text-3xl font-bold text-center text-gray-900 dark:text-white mb-10"></h2>
-     <div class="space-y-4">
-      <div class="faq-item border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-6 py-4 font-semibold flex justify-between items-center" aria-expanded="false"> <span data-template-id="faq-q1" class="canva-text"></span> <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i> </button>
-       <div class="faq-answer px-6 pb-4">
-        <p data-template-id="faq-a1" class="canva-text text-gray-600 dark:text-gray-300"></p>
-       </div>
-      </div>
-      <div class="faq-item border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-6 py-4 font-semibold flex justify-between items-center" aria-expanded="false"> <span data-template-id="faq-q2" class="canva-text"></span> <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i> </button>
-       <div class="faq-answer px-6 pb-4">
-        <p data-template-id="faq-a2" class="canva-text text-gray-600 dark:text-gray-300"></p>
-       </div>
-      </div>
-      <div class="faq-item border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-6 py-4 font-semibold flex justify-between items-center" aria-expanded="false"> <span data-template-id="faq-q3" class="canva-text"></span> <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i> </button>
-       <div class="faq-answer px-6 pb-4">
-        <p data-template-id="faq-a3" class="canva-text text-gray-600 dark:text-gray-300"></p>
-       </div>
-      </div>
-      <div class="faq-item border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden"><button class="faq-toggle w-full text-left px-6 py-4 font-semibold flex justify-between items-center" aria-expanded="false"> <span data-template-id="faq-q4" class="canva-text"></span> <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i> </button>
-       <div class="faq-answer px-6 pb-4">
-        <p data-template-id="faq-a4" class="canva-text text-gray-600 dark:text-gray-300"></p>
-       </div>
-      </div>
-     </div>
-    </div>
-   </section>
-  </main><!-- Footer -->
-  <footer data-template-id="footer-section" class="canva-footer bg-gray-900 text-gray-300 py-12">
-   <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-    <div>
-     <p data-template-id="footer-brand" class="canva-text text-xl font-bold text-white"></p>
-     <p data-template-id="footer-desc" class="canva-text mt-2 text-sm text-gray-400"></p>
-    </div>
-    <div>
-     <p class="font-semibold text-white mb-3">Links</p>
-     <ul class="space-y-2 text-sm">
-      <li><a href="#home" class="hover:text-verde transition">Início</a></li>
-      <li><a href="#mapa" class="hover:text-verde transition">Mapa</a></li>
-      <li><a href="#ods" class="hover:text-verde transition">ODS 2</a></li>
-      <li><a href="#contato" class="hover:text-verde transition">Contato</a></li>
-      <li><a href="#ajudar" class="hover:text-verde transition">Ajuda</a></li>
-     </ul>
-    </div>
-    <div>
-     <p class="font-semibold text-white mb-3">Redes sociais</p>
-     <div class="flex gap-4"><i data-lucide="instagram" class="w-5 h-5 hover:text-verde cursor-pointer transition"></i> <i data-lucide="facebook" class="w-5 h-5 hover:text-verde cursor-pointer transition"></i> <i data-lucide="twitter" class="w-5 h-5 hover:text-verde cursor-pointer transition"></i> <i data-lucide="linkedin" class="w-5 h-5 hover:text-verde cursor-pointer transition"></i>
-     </div>
-    </div>
-   </div>
-   <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
-    <p data-template-id="footer-copy" class="canva-text"></p>
-   </div>
-  </footer>
-  <script src="/_sdk/1a0e63f7a958ec3e.editing_sdk.js" integrity="sha512-lW+iibZ5vXaBl3IQ1K3ooQE1gfdDZxiO+Y7NpWdeypLOwr1WIYo3edm3nu+wyePemyM75tcU3yV7YyImK9wxMQ=="></script>
-  <script src="/_sdk/0e8d3a91e1c6f495.data_sdk.js" integrity="sha512-c00oDoGjsMgluCLLEyVl3suwEkgjOGGplVFbsilUoBg4aMKNmsL3mwsc9r0dPn95qiSZyjBousQXgROkAW7p/w=="></script>
-  <script>
-        // Dark mode
-        function toggleDark() {
-            document.documentElement.classList.toggle('dark');
-        }
-
-        // Font size
-        let fontLevel = 0;
-        function changeFontSize() {
-            fontLevel = (fontLevel + 1) % 3;
-            document.body.classList.remove('font-size-large', 'font-size-xlarge');
-            if (fontLevel === 1) document.body.classList.add('font-size-large');
-            if (fontLevel === 2) document.body.classList.add('font-size-xlarge');
-        }
-
-        // Contrast
-        function toggleContrast() {
-            document.body.classList.toggle('high-contrast');
-        }
-
-        // FAQ
-        document.querySelectorAll('.faq-toggle').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const answer = btn.nextElementSibling;
-                const isOpen = answer.classList.contains('open');
-                document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-                if (!isOpen) answer.classList.add('open');
-                btn.setAttribute('aria-expanded', !isOpen);
             });
         });
 
-        // Stats animation
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    document.querySelectorAll('.stat-item').forEach(item => {
-                        const target = parseInt(item.dataset.target);
-                        const numEl = item.querySelector('.stat-number');
-                        let current = 0;
-                        const step = Math.ceil(target / 60);
-                        const interval = setInterval(() => {
-                            current += step;
-                            if (current >= target) { current = target; clearInterval(interval); }
-                            numEl.textContent = '+' + current.toLocaleString('pt-BR');
-                        }, 25);
-                    });
-                    statsObserver.disconnect();
+        function compartilharProjeto() {
+            const link = window.location.href;
+            navigator.clipboard.writeText(link).then(() => {
+                const mensagem = document.getElementById("mensagemCompartilhamento");
+                mensagem.classList.add("mostrar");
+                setTimeout(() => {
+                    mensagem.classList.remove("mostrar");
+                }, 3500);
+            });
+        }
+
+        const numeros = document.querySelectorAll(".numero strong");
+        numeros.forEach((numero) => {
+            const valorFinal = parseInt(numero.textContent);
+            let valorAtual = 0;
+            const duracao = 1500;
+            const intervalo = 20;
+            const incremento = valorFinal / (duracao / intervalo);
+
+            const contador = setInterval(() => {
+                valorAtual += incremento;
+                if (valorAtual >= valorFinal) {
+                    valorAtual = valorFinal;
+                    clearInterval(contador);
                 }
-            });
-        }, { threshold: 0.3 });
-        statsObserver.observe(document.getElementById('stats-grid'));
-
-        // Map
-        const map = L.map('map').setView([-23.55, -46.63], 12);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap'
-        }).addTo(map);
-
-        const locations = [
-            { lat: -23.545, lng: -46.635, name: 'Restaurante Bom Prato - Sé', type: 'refeicao', address: 'R. Maria Paula, 101 - Bela Vista', hours: 'Seg-Sex 7h-14h', phone: '(11) 3333-1234', service: '🍽 Refeições prontas' },
-            { lat: -23.560, lng: -46.655, name: 'Banco de Alimentos SP', type: 'banco', address: 'Av. Dr. Gastão V. de Moura, 226', hours: 'Seg-Sex 8h-17h', phone: '(11) 3334-5678', service: '🥬 Banco de alimentos' },
-            { lat: -23.530, lng: -46.620, name: 'ONG Ação da Cidadania', type: 'ong', address: 'R. Augusta, 1200 - Consolação', hours: 'Seg-Sáb 9h-18h', phone: '(11) 3335-9012', service: '🧑‍🤝‍🧑 ONG' },
-            { lat: -23.575, lng: -46.640, name: 'Cozinha Solidária Vila Mariana', type: 'refeicao', address: 'R. Domingos de Morais, 800', hours: 'Seg-Sex 11h-14h', phone: '(11) 3336-3456', service: '❤️ Cozinha solidária' },
-            { lat: -23.520, lng: -46.670, name: 'Ponto de Cestas - Lapa', type: 'cesta', address: 'R. Guaicurus, 500 - Lapa', hours: 'Qua e Sáb 8h-12h', phone: '(11) 3337-7890', service: '🛒 Cestas básicas' },
-        ];
-
-        const markers = [];
-        locations.forEach(loc => {
-            const marker = L.marker([loc.lat, loc.lng]).addTo(map);
-            marker.bindTooltip(loc.name);
-            marker.on('click', () => showDetail(loc));
-            marker._locType = loc.type;
-            markers.push(marker);
+                numero.textContent = Math.floor(valorAtual);
+            }, intervalo);
         });
-
-        function showDetail(loc) {
-            const d = document.getElementById('map-detail');
-            d.classList.remove('hidden');
-            document.getElementById('detail-name').textContent = loc.name;
-            document.getElementById('detail-address').textContent = loc.address;
-            document.getElementById('detail-hours').textContent = loc.hours;
-            document.getElementById('detail-phone').textContent = loc.phone;
-            document.getElementById('detail-type').textContent = loc.service;
-        }
-
-        // Filters
-        document.querySelectorAll('.filter-cb').forEach(cb => {
-            cb.addEventListener('change', () => {
-                const active = [...document.querySelectorAll('.filter-cb:checked')].map(c => c.dataset.type);
-                markers.forEach(m => {
-                    if (active.includes(m._locType)) { m.addTo(map); }
-                    else { map.removeLayer(m); }
-                });
-            });
-        });
-
-        // Contact form
-        (async () => {
-            const handler = { onDataChanged() {} };
-            await window.dataSdk.init(handler);
-        })();
-
-        document.getElementById('contact-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const btn = document.querySelector('[data-template-id="form-submit-btn"]');
-            btn.disabled = true;
-            btn.style.opacity = '0.6';
-
-            const record = {
-                name: document.getElementById('f-name').value,
-                email: document.getElementById('f-email').value,
-                city: document.getElementById('f-city').value,
-                message: document.getElementById('f-msg').value,
-                created_at: new Date().toISOString()
-            };
-
-            const result = await window.dataSdk.create(record);
-            btn.disabled = false;
-            btn.style.opacity = '1';
-
-            if (result.isOk) {
-                document.getElementById('form-success').classList.remove('hidden');
-                document.getElementById('form-error').classList.add('hidden');
-                e.target.reset();
-            } else {
-                document.getElementById('form-error').classList.remove('hidden');
-                document.getElementById('form-success').classList.add('hidden');
-            }
-        });
-
-        // Init icons
-        lucide.createIcons();
     </script>
- </body>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
