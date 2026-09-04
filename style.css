@@ -1282,4 +1282,249 @@
        }
    }
 
-   
+  /* ================================
+   COMO O PROJETO NASCEU
+================================ */
+
+.historia {
+    padding: 90px 20px;
+    background: var(--cinza);
+}
+
+.historia-container {
+    max-width:1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.historia-imagem {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    border-radius: var(--raio);
+}
+
+.historia-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.historia-texto {
+    max-width: 650px;
+}
+
+.historia-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--verde);
+}
+
+.historia-texto h2 {
+    margin: 0 0 25px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 38px;
+    line-height: 1.15;
+    color: var(--texto);
+}
+
+.historia-texto p {
+    margin: 0 0 16px;
+
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--texto-secundario);
+}
+
+.historia-texto strong {
+    color: var(--verde);
+}
+
+
+/* ================================
+   NOSSA EQUIPE
+================================ */
+
+.equipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card-equipe {
+    width: 300px;
+}
+.equipe {
+    padding: 90px 20px;
+    background: var(--branco);
+}
+
+.equipe-container {
+    max-width: var(--largura);
+    margin: 0 auto;
+}
+
+.titulo-secao {
+    max-width: 650px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.titulo-secao > span {
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--verde);
+}
+
+.titulo-secao h2 {
+    margin: 0 0 15px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 38px;
+    line-height: 1.2;
+    color: var(--texto);
+}
+
+.titulo-secao p {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--texto-secundario);
+}
+
+
+/* GRID DOS PARTICIPANTES */
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* CARD DE CADA PESSOA */
+
+.card-equipe {
+    padding: 25px;
+    text-align: center;
+
+    background: var(--branco);
+    border: 1px solid var(--cinza-escuro);
+    border-radius: var(--raio);
+
+    box-shadow: var(--sombra);
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-equipe:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(25, 70, 40, 0.12);
+}
+
+.card-equipe img {
+    width: 140px;
+    height: 140px;
+
+    object-fit: cover;
+    display: block;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+}
+
+.card-equipe h3 {
+    margin: 0 0 6px;
+
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    color: var(--texto);
+}
+
+.card-equipe > span {
+    display: block;
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--verde);
+}
+
+.card-equipe p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--texto-secundario);
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 900px) {
+
+    .historia-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .historia-texto {
+        max-width: 100%;
+    }
+
+    .historia-imagem {
+        height: 350px;
+    }
+
+    .equipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .historia {
+        padding: 65px 20px;
+    }
+
+    .equipe {
+        padding: 65px 20px;
+    }
+
+    .historia-texto h2,
+    .titulo-secao h2 {
+        font-size: 30px;
+    }
+
+    .historia-imagem {
+        height: 280px;
+    }
+
+    .equipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-equipe {
+        padding: 22px;
+    }
+}
