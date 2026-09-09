@@ -1,7 +1,0 @@
-C:\Users\lab1-aluno\Desktop\Feira_Tecnologica_2026\CadastroPontosBackend\obj\Debug\net7.0\CadastroPontosBackend.csproj.AssemblyReference.cache
-C:\Users\lab1-aluno\Desktop\Feira_Tecnologica_2026\CadastroPontosBackend\obj\Debug\net7.0\CadastroPontosBackend.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\lab1-aluno\Desktop\Feira_Tecnologica_2026\CadastroPontosBackend\obj\Debug\net7.0\CadastroPontosBackend.AssemblyInfoInputs.cache
-C:\Users\lab1-aluno\Desktop\Feira_Tecnologica_2026\CadastroPontosBackend\obj\Debug\net7.0\CadastroPontosBackend.AssemblyInfo.cs
-C:\Users\lab1-aluno\Desktop\Feira_Tecnologica_2026\CadastroPontosBackend\obj\Debug\net7.0\CadastroPontosBackend.csproj.CoreCompileInputs.cache
-C:\Users\lab1-aluno\Desktop\Feira_Tecnologica_2026\CadastroPontosBackend\obj\Debug\net7.0\CadastroPontosBackend.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\lab1-aluno\Desktop\Feira_Tecnologica_2026\CadastroPontosBackend\obj\Debug\net7.0\CadastroPontosBackend.MvcApplicationPartsAssemblyInfo.cache
