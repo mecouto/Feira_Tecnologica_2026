@@ -92,8 +92,8 @@
        top: 0;
        z-index: 1000;
    
-       background: rgba(255, 255, 255, 0.96);
-       border-bottom: 1px solid var(--borda);
+       background: var(--verde-escuro);
+       border-bottom: 1px solid rgba(255, 255, 255, 0.14);
    
        backdrop-filter: blur(12px);
    }
