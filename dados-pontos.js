@@ -2150,5 +2150,145 @@ const pontosDistribuicao = [
     "endereco": "Rua General Osório, nº 144 – Centro / Vila Bocaina, Mauá - SP",
     "modalidade": "Fixo",
     "unidade": "1 Mauá"
-  }
+  },
+  {
+  "id": 216,
+  "nome": "CRAS Ferraz",
+  "tipo": "cras",
+  "cidade": "Bauru",
+  "bairro": "Jardim Ferraz",
+  "endereco": "Rua do Prata, qd. 04 s/nº",
+  "regiao": "Sul",
+  "telefone": "(14) 3234-5853"
+},
+{
+  "id": 217,
+  "nome": "CRAS Central",
+  "tipo": "cras",
+  "cidade": "Botucatu",
+  "bairro": "Bairro Alto",
+  "endereco": "Rua João Passos, 1.766",
+  "regiao": "Central",
+  "telefone": "(14) 3811-1490"
+},
+{
+  "id": 218,
+  "nome": "CRAS Leste",
+  "tipo": "cras",
+  "cidade": "Botucatu",
+  "bairro": "Jardim Palos Verdes",
+  "endereco": "Rua Boticário Vieira, 469",
+  "regiao": "Leste",
+  "telefone": "(14) 3811-1490"
+},
+{
+  "id": 219,
+  "nome": "CRAS Anhumas",
+  "tipo": "cras",
+  "cidade": "Campinas",
+  "bairro": "Vila Nogueira",
+  "endereco": "Rua Dona Luiza de Gusmão, 2.200",
+  "regiao": "Leste",
+  "telefone": "(19) 3734-2000"
+},
+{
+  "id": 220,
+  "nome": "CRAS Espaço Esperança",
+  "tipo": "cras",
+  "cidade": "Campinas",
+  "bairro": "Recanto da Fortuna",
+  "endereco": "Rua Neuraci da Silva Rodrigues, 194",
+  "regiao": "Norte",
+  "telefone": "(19) 3734-2000"
+},
+{
+  "id": 221,
+  "nome": "CRAS Satélite Íris",
+  "tipo": "cras",
+  "cidade": "Campinas",
+  "bairro": "Cidade Satélite Íris I",
+  "endereco": "Rua Prof. Mário Scolari, 91",
+  "regiao": "Noroeste",
+  "telefone": "(19) 3734-2000"
+},
+{
+  "id": 222,
+  "nome": "CRAS Ariston",
+  "tipo": "cras",
+  "cidade": "Carapicuíba",
+  "bairro": "Cidade Ariston",
+  "endereco": "Rua Comendador Dante Carraro, 333",
+  "regiao": "Central",
+  "telefone": "(11) 4184-8200"
+},
+{
+  "id": 223,
+  "nome": "CRAS Brigitte",
+  "tipo": "cras",
+  "cidade": "Carapicuíba",
+  "bairro": "Vila Brigitte",
+  "endereco": "Rua Projetada, 30",
+  "regiao": "Sul",
+  "telefone": "(11) 4185-3000"
+},
+{
+  "id": 224,
+  "nome": "CRAS Cotia",
+  "tipo": "cras",
+  "cidade": "Cotia",
+  "bairro": "Centro",
+  "endereco": "Rua Senador Feijó, 165",
+  "regiao": "Central",
+  "telefone": "(11) 4616-2831"
+},
+{
+  "id": 225,
+  "nome": "CRAS Caucaia do Alto",
+  "tipo": "cras",
+  "cidade": "Cotia",
+  "bairro": "Caucaia do Alto",
+  "endereco": "Rua José André de Moraes, 40",
+  "regiao": "Oeste",
+  "telefone": "(11) 4145-1000"
+},
+{
+  "id": 226,
+  "nome": "CRAS Vila Nova",
+  "tipo": "cras",
+  "cidade": "Cubatão",
+  "bairro": "Vila Nova",
+  "endereco": "Rua Assembleia de Deus, 435",
+  "regiao": "Central",
+  "telefone": "(13) 3362-4000"
+},
+{
+  "id": 227,
+  "nome": "CRAS Vila Natal",
+  "tipo": "cras",
+  "cidade": "Cubatão",
+  "bairro": "Vila Natal",
+  "endereco": "Rua Éfeso, 100",
+  "regiao": "Norte",
+  "telefone": "(13) 3362-4000"
+},
+{
+  "id": 228,
+  "nome": "CRAS Centro",
+  "tipo": "cras",
+  "cidade": "Embu das Artes",
+  "bairro": "Cercado Grande",
+  "endereco": "Rua Sete de Setembro, 73",
+  "regiao": "Central",
+  "telefone": "(11) 4785-3583"
+},
+{
+  "id": 229,
+  "nome": "CRAS Jardim do Colégio",
+  "tipo": "cras",
+  "cidade": "Embu das Artes",
+  "bairro": "Jardim do Colégio",
+  "endereco": "Rua Roraima, 120",
+  "regiao": "Sul",
+  "telefone": "(11) 4785-3583"
+}
 ];
