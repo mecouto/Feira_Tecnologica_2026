@@ -1575,68 +1575,7 @@
     line-height: 1.6;
     font-size: 16px;
 }
-.informacoes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 40px auto;
-    max-width: 1000px;
-}
 
-.info-card {
-    width: 400px;
-    padding: 30px;
-    background-color: white;
-    border: 1px solid #dfe5df;
-    border-radius: 18px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    text-align: center;
-}
-
-.logo-info {
-    width: 130px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.info-card h2 {
-    color: #176b2c;
-    margin-bottom: 15px;
-}
-
-.info-card p {
-    color: #666;
-    line-height: 1.6;
-}
-
-.botao-info {
-    display: inline-block;
-    margin-top: 15px;
-    background-color: #25843b;
-    color: white;
-    padding: 8px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-.botao-info:hover {
-    background-color: #176b2c;
-}
-.informacoes {
-    display: flex;
-    flex-wrap: wrap;   /* <- adicionado: permite quebrar linha */
-    justify-content: center;
-    gap: 30px;
-    margin: 40px auto;
-    max-width: 1000px;
-}
-
-.titulo-ponto {           /* <- classe nova, não tinha nenhum estilo */
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
 
 
 /* ================================
@@ -1689,5 +1628,125 @@
 
     .card-equipe {
         padding: 22px;
+    }
+}
+.informacoes {
+    display: flex;
+    flex-wrap: wrap;   /* <- adicionado: permite quebrar linha */
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.titulo-ponto {           /* <- classe nova, não tinha nenhum estilo */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* =====================================================
+   NOSSO IMPACTO — SEÇÃO COMPLETAMENTE EXPANDIDA
+   ===================================================== */
+
+.impacto {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    padding: 90px 0;
+    background: var(--verde-escuro);
+    color: white;
+}
+
+/* TÍTULO */
+.impacto .titulo-secao {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.impacto .titulo-secao h2 {
+    color: white;
+}
+
+.impacto .titulo-secao > span {
+    color: #a8e6b2;
+}
+
+.impacto .titulo-secao p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* ÁREA DOS NÚMEROS — TODA A LARGURA */
+.numeros-impacto {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+
+    padding: 45px 5vw;
+
+    background: var(--verde-escuro);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* CADA NÚMERO */
+.numero {
+    min-height: 150px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.numero:last-child {
+    border-right: none;
+}
+
+.numero strong {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    color: #b8f0bf;
+}
+
+.numero span {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* CELULAR */
+@media (max-width: 650px) {
+    .impacto {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding: 65px 0;
+    }
+
+    .numeros-impacto {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 15px;
+    }
+
+    .numero {
+        border-right: none;
     }
 }
