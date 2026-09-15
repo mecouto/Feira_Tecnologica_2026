@@ -92,8 +92,8 @@
        top: 0;
        z-index: 1000;
    
-       background: rgba(255, 255, 255, 0.96);
-       border-bottom: 1px solid var(--borda);
+       background: var(--verde-escuro);
+       border-bottom: 1px solid rgba(255, 255, 255, 0.14);
    
        backdrop-filter: blur(12px);
    }
@@ -114,7 +114,7 @@
        align-items: center;
        gap: 8px;
    
-       color: #6db97f;
+    color: var(--branco);
    }
    
    .logo strong {
@@ -148,18 +148,13 @@
    header nav ul a {
        font-size: 0.9rem;
        font-weight: 500;
-       color: #6db97f;
+    color: rgba(255, 255, 255, 0.86);
    
        transition: 0.2s ease;
    }
    
    header nav ul a:hover {
-       color: #dbffe3;
-   }
-
-
-   header{
-    background-color: #222c17;
+       color: var(--branco);
    }
    
    
@@ -772,6 +767,74 @@
 
     color: var(--texto-secundario);
 }
+   .impacto {
+       width: 100%;
+       max-width: none;
+   
+    padding: 88px max(24px, calc((100% - var(--largura)) / 2));
+   
+    background-color: var(--verde-escuro);
+       color: white;
+   }
+   
+   .impacto .titulo-secao {
+       margin-bottom: 45px;
+   }
+   
+   .impacto .titulo-secao h2 {
+       color: white;
+   }
+
+   .impacto .titulo-secao > span {
+       color: #a8e6b2;
+   }
+   
+   .impacto .titulo-secao p {
+       color: rgba(255, 255, 255, 0.8);
+   }
+   
+   .numeros-impacto {
+       max-width: var(--largura);
+       margin: auto;
+   
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+   }
+   
+   .numero {
+       text-align: center;
+   
+       min-height: 150px;
+       padding: 22px 20px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       color: rgba(255, 255, 255, 0.82);
+       transition: transform 0.2s ease, background 0.2s ease;
+   }
+
+   .numero:hover {
+       transform: translateY(-4px);
+       background: rgba(255, 255, 255, 0.13);
+   }
+   
+   .numero strong {
+       display: block;
+   
+       font-family: 'Manrope', sans-serif;
+       font-size: 2.5rem;
+    line-height: 1.1;
+    color: #b8f0bf;
+   }
+   
+   .numero span {
+       font-size: 0.85rem;
+       opacity: 0.85;
+    margin-top: 6px;
+   }
+   
    
    /* =========================================================
       AJUDAR
@@ -872,58 +935,6 @@
     color: #176b35;
     transform: translateX(3px);
 }
-   
-   
-   /* =========================================================
-      DEPOIMENTOS
-      ========================================================= */
-   
-   section:nth-of-type(7) {
-       width: min(100% - 48px, var(--largura));
-       margin: 0 auto;
-   
-       padding-top: 30px;
-       padding-bottom: 100px;
-   }
-   
-   section:nth-of-type(7) > div {
-       display: grid;
-       grid-template-columns: 110px 1fr;
-       align-items: center;
-       gap: 25px;
-   
-       padding: 25px;
-   
-       margin-bottom: 20px;
-   
-       border-radius: 18px;
-       border: 0.5px dashed #14772b;
-       background: #e1ffe1;
-   }
-   
-   section:nth-of-type(7) img {
-       width: 90px;
-       height: 90px;
-   
-       border-radius: 50%;
-   
-       object-fit: cover;
-   
-       background: var(--azul);
-   }
-   
-   section:nth-of-type(7) p:first-child {
-       color: var(--texto);
-       font-size: 1rem;
-   }
-   
-   section:nth-of-type(7) p:last-child {
-       margin-top: 8px;
-   
-       color: var(--verde);
-       font-size: 0.85rem;
-       font-weight: 700;
-   }
    
    /* ===== MENSAGEM DE COMPARTILHAMENTO ===== */
 
