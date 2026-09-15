@@ -1468,12 +1468,19 @@
     text-align: center;
 
     background: var(--branco);
-    border: 1px solid var(--cinza-escuro);
+    border: 1px solid var(--borda);
     border-radius: var(--raio);
 
     box-shadow: var(--sombra);
 
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 430px;
+}
 }
 
 .card-equipe:hover {
@@ -1516,6 +1523,119 @@
     font-size: 14px;
     line-height: 1.6;
     color: var(--texto-secundario);
+}
+.linkedin {
+     display: inline-block;
+    margin-top: 10px;
+    background-color: #25843b;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.linkedin button {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0;
+    
+}
+
+.linkedin:hover {
+    background: var(--verde-escuro);
+    transform: translateY(-2px);
+}
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.info-card {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #dfe5df;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.info-card h2 {
+    color: #176b2c;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.informacoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.info-card {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #dfe5df;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.logo-info {
+    width: 130px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.info-card h2 {
+    color: #176b2c;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.botao-info {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #25843b;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.botao-info:hover {
+    background-color: #176b2c;
+}
+.informacoes {
+    display: flex;
+    flex-wrap: wrap;   /* <- adicionado: permite quebrar linha */
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.titulo-ponto {           /* <- classe nova, não tinha nenhum estilo */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 
