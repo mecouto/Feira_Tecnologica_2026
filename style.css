@@ -768,12 +768,9 @@
     color: var(--texto-secundario);
 }
    .impacto {
-       width: 100%;
-       max-width: none;
-   
-    padding: 88px max(24px, calc((100% - var(--largura)) / 2));
-   
-    background-color: var(--verde-escuro);
+       width: 100vw;
+       padding: 88px max(24px, calc((100% - var(--largura)) / 2));
+       background-color: var(--verde-escuro);
        color: white;
    }
    
@@ -1480,7 +1477,6 @@
     align-items: center;
 
     min-height: 430px;
-}
 }
 
 .card-equipe:hover {
