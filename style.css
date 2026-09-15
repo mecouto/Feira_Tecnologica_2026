@@ -686,60 +686,92 @@
       IMPACTO
       ========================================================= */
    
-   .impacto {
-       width: 100%;
-       max-width: none;
-   
-       padding: 80px max(24px, calc((100% - var(--largura)) / 2));
-   
-       background: var(--verde);
-       color: white;
-   }
-   
-   .impacto .titulo-secao {
-       margin-bottom: 45px;
-   }
-   
-   .impacto .titulo-secao h2 {
-       color: white;
-   }
-   
-   .impacto .titulo-secao p {
-       color: rgba(255, 255, 255, 0.8);
-   }
-   
-   .numeros-impacto {
-       max-width: var(--largura);
-       margin: auto;
-   
-       display: grid;
-       grid-template-columns: repeat(4, 1fr);
-   }
-   
-   .numero {
-       text-align: center;
-   
-       padding: 10px 25px;
-   
-       border-right: 1px solid rgba(255, 255, 255, 0.2);
-   }
-   
-   .numero:last-child {
-       border-right: none;
-   }
-   
-   .numero strong {
-       display: block;
-   
-       font-family: 'Manrope', sans-serif;
-       font-size: 2.5rem;
-   }
-   
-   .numero span {
-       font-size: 0.85rem;
-       opacity: 0.85;
-   }
-   
+   /* IMPACTO */
+
+.impacto {
+    width: 100%;
+    max-width: none;
+    padding: 80px 24px;
+    background: var(--verde);
+    color: white;
+}
+
+.impacto .titulo-secao {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.impacto .titulo-secao h2 {
+    color: white;
+}
+
+.impacto .titulo-secao p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* CARD HORIZONTAL */
+
+.numeros-impacto {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 35px 20px;
+
+    background: #e9f7ed;
+    border-radius: 22px;
+
+    border: 2px dashed #9bd3a7;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* CADA NÚMERO */
+
+.numero {
+    flex: 1;
+    text-align: center;
+    padding: 10px 25px;
+
+    color: var(--verde);
+
+    border-right: 1px solid #b8d9bf;
+}
+
+.numero:last-child {
+    border-right: none;
+}
+
+
+/* NÚMERO GRANDE */
+
+.numero strong {
+    display: block;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+
+    color: var(--verde);
+}
+
+
+/* TEXTO */
+
+.numero span {
+    display: block;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    color: var(--texto-secundario);
+}
    
    /* =========================================================
       AJUDAR
