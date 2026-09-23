@@ -34,6 +34,12 @@
        padding: 0;
        box-sizing: border-box;
    }
+
+   html, body {
+       width: 100%;
+       max-width: 100%;
+       overflow-x: hidden;
+}
    
    html {
        scroll-behavior: smooth;
@@ -356,7 +362,7 @@
    }
    
    .card {
-       position: relative;
+       position: center;
    
        padding: 30px;
    
@@ -849,6 +855,7 @@
    }
    
    .cards-ajuda {
+       position: center;
        display: grid;
        grid-template-columns: repeat(3, 1fr);
        gap: 24px;
@@ -1241,6 +1248,10 @@
        .contato {
            width: min(100% - 30px, var(--largura));
        }
+
+       .impacto {
+           padding: 60px 15px;
+    }
    
        .inicio {
            min-height: auto;
@@ -1652,12 +1663,11 @@
    ===================================================== */
 
 .impacto {
-    width: 100vw;
-    max-width: none;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
 
-    padding: 90px 0;
+    padding: 80px 24px;
     background: var(--verde-escuro);
     color: white;
 }
