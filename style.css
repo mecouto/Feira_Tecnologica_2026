@@ -34,6 +34,12 @@
        padding: 0;
        box-sizing: border-box;
    }
+
+   html, body {
+       width: 100%;
+       max-width: 100%;
+       overflow-x: hidden;
+}
    
    html {
        scroll-behavior: smooth;
@@ -356,7 +362,7 @@
    }
    
    .card {
-       position: relative;
+       position: center;
    
        padding: 30px;
    
@@ -463,6 +469,12 @@
    
        color: var(--texto-secundario);
    }
+
+   #mapa-interativo iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
    
    
    /* filtros */
@@ -843,6 +855,7 @@
    }
    
    .cards-ajuda {
+       position: center;
        display: grid;
        grid-template-columns: repeat(3, 1fr);
        gap: 24px;
@@ -1101,8 +1114,7 @@
        font-weight: 700;
        text-align: left;
        margin-top: 10px;
-       margin-left: 50px;
-       margin-right: 50px;
+       margin: 10px auto;
    }
    
    .accordion::after {
@@ -1136,7 +1148,8 @@
    }
 
    .divduv h2{
-    margin-left: 50px;
+    margin-left: 0;
+    text-align: center;
    }
    /* =========================================================
       FOOTER
@@ -1235,6 +1248,10 @@
        .contato {
            width: min(100% - 30px, var(--largura));
        }
+
+       .impacto {
+           padding: 60px 15px;
+    }
    
        .inicio {
            min-height: auto;
@@ -1402,9 +1419,7 @@
     gap: 25px;
 }
 
-.card-equipe {
-    width: 300px;
-}
+
 .equipe {
     padding: 90px 20px;
     background: var(--branco);
@@ -1461,6 +1476,8 @@
 /* CARD DE CADA PESSOA */
 
 .card-equipe {
+    width: 100%;
+    max-width: 300px;
     padding: 25px;
     text-align: center;
 
@@ -1552,7 +1569,8 @@
 }
 
 .info-card {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 30px;
     background-color: white;
     border: 1px solid #dfe5df;
@@ -1645,12 +1663,11 @@
    ===================================================== */
 
 .impacto {
-    width: 100vw;
-    max-width: none;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
 
-    padding: 90px 0;
+    padding: 80px 24px;
     background: var(--verde-escuro);
     color: white;
 }
